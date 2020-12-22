@@ -21,6 +21,7 @@ remove-green
 remove-blue  
 sort  
 reverse-sort  
+bgr  
 ```
 
 ### How to build

@@ -60,3 +60,13 @@ static void reverse_sort(RGB *rgb)
     rgb->g = vals[1];
     rgb->b = vals[0];
 }
+
+static void bgr(RGB *rgb)
+{
+    uint8_t r = rgb->r;
+    uint8_t g = rgb->g;
+    uint8_t b = rgb->b;
+    rgb->r = b;
+    rgb->g = g;
+    rgb->b = r;
+}
