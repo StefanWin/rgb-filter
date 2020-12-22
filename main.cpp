@@ -26,7 +26,7 @@ static bool ends_with(std::string const &fullString, std::string const &ending)
 
 int main(int argc, char const *argv[])
 {
-    std::vector<std::string> valid_filters = {"grayscale", "invert", "remove-red", "remove-green", "remove_blue", "sort", "reverse-sort", "bgr", "clamp-50"};
+    std::vector<std::string> valid_filters = {"grayscale", "invert", "remove-red", "remove-green", "remove_blue", "sort", "reverse-sort", "bgr", "clamp-50", "clamp-100"};
 
     std::string file_name = "../img.jpg";
     std::string filter = "grayscale";
@@ -109,7 +109,7 @@ int main(int argc, char const *argv[])
         {
             bgr(pixel);
         }
-        else if (filter == "clamp-10")
+        else if (filter == "clamp-50")
         {
             clamp_50(pixel);
         }
