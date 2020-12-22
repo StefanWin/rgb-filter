@@ -70,3 +70,10 @@ static void bgr(RGB *rgb)
     rgb->g = g;
     rgb->b = r;
 }
+
+static void clamp_50(RGB *rgb)
+{
+    rgb->r = rgb->r - (rgb->r % 50);
+    rgb->g = rgb->g - (rgb->g % 50);
+    rgb->b = rgb->b - (rgb->b % 50);
+}
