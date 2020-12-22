@@ -1,6 +1,8 @@
 #pragma once
 
 #include <stdint.h>
+#include <algorithm>
+#include <array>
 
 struct RGB
 {
@@ -39,4 +41,22 @@ static void remove_green(RGB *rgb)
 static void remove_blue(RGB *rgb)
 {
     rgb->b = 0;
+}
+
+static void sort(RGB *rgb)
+{
+    std::array<uint8_t, 3> vals = {rgb->r, rgb->g, rgb->b};
+    std::sort(vals.begin(), vals.end());
+    rgb->r = vals[0];
+    rgb->g = vals[1];
+    rgb->b = vals[2];
+}
+
+static void reverse_sort(RGB *rgb)
+{
+    std::array<uint8_t, 3> vals = {rgb->r, rgb->g, rgb->b};
+    std::sort(vals.begin(), vals.end());
+    rgb->r = vals[2];
+    rgb->g = vals[1];
+    rgb->b = vals[0];
 }
