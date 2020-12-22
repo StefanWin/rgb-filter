@@ -84,3 +84,36 @@ static void clamp_100(RGB *rgb)
     rgb->g = rgb->g - (rgb->g % 100);
     rgb->b = rgb->b - (rgb->b % 100);
 }
+
+static void r(RGB *rgb)
+{
+    rgb->g = 0;
+    rgb->b = 0;
+}
+
+static void g(RGB *rgb)
+{
+    rgb->r = 0;
+    rgb->b = 0;
+}
+
+static void b(RGB *rgb)
+{
+    rgb->r = 0;
+    rgb->g = 0;
+}
+
+static void rg(RGB *rgb)
+{
+    rgb->b = 0;
+}
+
+static void rb(RGB *rgb)
+{
+    rgb->g = 0;
+}
+
+static void gb(RGB *rgb)
+{
+    rgb->r = 0;
+}

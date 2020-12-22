@@ -26,7 +26,23 @@ static bool ends_with(std::string const &fullString, std::string const &ending)
 
 int main(int argc, char const *argv[])
 {
-    std::vector<std::string> valid_filters = {"grayscale", "invert", "remove-red", "remove-green", "remove_blue", "sort", "reverse-sort", "bgr", "clamp-50", "clamp-100"};
+    std::vector<std::string> valid_filters = {
+        "grayscale",
+        "invert",
+        "remove-red",
+        "remove-green",
+        "remove_blue",
+        "sort",
+        "reverse-sort",
+        "bgr",
+        "clamp-50",
+        "clamp-100",
+        "r",
+        "g",
+        "b",
+        "rg",
+        "rb",
+        "gb"};
 
     std::string file_name = "../img.jpg";
     std::string filter = "grayscale";
@@ -117,7 +133,30 @@ int main(int argc, char const *argv[])
         {
             clamp_100(pixel);
         }
-
+        else if (filter == "r")
+        {
+            r(pixel);
+        }
+        else if (filter == "g")
+        {
+            g(pixel);
+        }
+        else if (filter == "b")
+        {
+            b(pixel);
+        }
+        else if (filter == "rg")
+        {
+            rg(pixel);
+        }
+        else if (filter == "rb")
+        {
+            rb(pixel);
+        }
+        else if (filter == "gb")
+        {
+            gb(pixel);
+        }
         copy[i] = (unsigned char)pixel->r;
         copy[i + 1] = (unsigned char)pixel->g;
         copy[i + 2] = (unsigned char)pixel->b;
