@@ -29,9 +29,6 @@ int main(int argc, char const *argv[])
     std::vector<std::string> valid_filters = {
         "grayscale",
         "invert",
-        "remove-red",
-        "remove-green",
-        "remove_blue",
         "sort",
         "reverse-sort",
         "bgr",
@@ -100,18 +97,6 @@ int main(int argc, char const *argv[])
         else if (filter == "invert")
         {
             invert_color(pixel);
-        }
-        else if (filter == "remove-red")
-        {
-            remove_red(pixel);
-        }
-        else if (filter == "remove-green")
-        {
-            remove_green(pixel);
-        }
-        else if (filter == "remove-blue")
-        {
-            remove_blue(pixel);
         }
         else if (filter == "sort")
         {

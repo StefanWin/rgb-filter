@@ -16,9 +16,6 @@ Build with C++ 17, CMake and [stb](https://github.com/nothings/stb).
 ```
 grayscale  
 invert  
-remove-red  
-remove-green  
-remove-blue  
 sort  
 reverse-sort  
 bgr  
