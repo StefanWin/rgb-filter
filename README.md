@@ -22,6 +22,7 @@ remove-blue
 sort  
 reverse-sort  
 bgr  
+clamp-50  
 ```
 
 ### How to build
