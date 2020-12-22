@@ -1,6 +1,7 @@
 # rgb-filter
 
 Apply simple RGB filters to images (jpg).  
+Build with C++ 17, CMake and [stb](https://github.com/nothings/stb).
 
 ### Usage:
 ```rgb-filter <input> <filter <output>```
