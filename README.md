@@ -23,6 +23,7 @@ sort
 reverse-sort  
 bgr  
 clamp-50  
+clamp-100  
 ```
 
 ### How to build

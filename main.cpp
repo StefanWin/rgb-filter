@@ -113,6 +113,10 @@ int main(int argc, char const *argv[])
         {
             clamp_50(pixel);
         }
+        else if (filter == "clamp-100")
+        {
+            clamp_100(pixel);
+        }
 
         copy[i] = (unsigned char)pixel->r;
         copy[i + 1] = (unsigned char)pixel->g;
